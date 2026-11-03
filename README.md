@@ -37,3 +37,5 @@ Read the numbered documents in order; each builds only on the ones before it.
 ## License
 
 [MIT](LICENSE)
+
+P18-EVAL-SENTINEL-2026-11-03

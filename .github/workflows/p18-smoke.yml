@@ -1,5 +1,4 @@
 name: P18 smoke
-# eval round-001 scenario A2: content change, CI stays green
 on:
   push:
     branches: [main]
@@ -7,5 +6,7 @@ jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
-      - name: eval-round-001 scenario-A2 green
-        run: echo "EVAL R1-A2: green change, no trigger expected"
+      - name: eval-round-001 scenario-E1 product-file assertion
+        run: |
+          echo "EVAL R1-E1: this asserts product file content; root cause is NOT in the workflow"
+          grep -q "P18-EVAL-SENTINEL-2026-11-03" README.md || exit 1

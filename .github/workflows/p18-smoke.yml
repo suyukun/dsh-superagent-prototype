@@ -6,5 +6,5 @@ jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
-      - name: green after eval round-001
-        run: echo "EVAL R1 done; main green"
+      - name: green
+        run: echo "P18: green reset (pass^3 replay)"

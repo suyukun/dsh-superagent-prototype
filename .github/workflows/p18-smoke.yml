@@ -6,5 +6,7 @@ jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
-      - name: green
-        run: echo "P18: green reset for replay (fixed yaml)"
+      - name: deliberate failure replay-1b
+        run: |
+          echo "P18 pass^3 replay 1b: broken on purpose"
+          exit 1

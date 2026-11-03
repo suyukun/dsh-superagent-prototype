@@ -6,6 +6,7 @@ jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
-      - name: green
+      - name: eval-round-001 scenario-A1
         run: |
-          echo "P18: green reset before red test"
+          echo "EVAL R1-A1: deliberately broken for smoke test"
+          exit 1

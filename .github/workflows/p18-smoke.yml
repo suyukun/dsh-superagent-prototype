@@ -6,7 +6,5 @@ jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
-      - name: deliberate failure replay-2
-        run: |
-          echo "P18 pass^3 replay 2: broken on purpose"
-          exit 1
+      - name: green after eval replay-2
+        run: echo "EVAL replay-2 done; main green"

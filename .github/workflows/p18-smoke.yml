@@ -6,7 +6,6 @@ jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
-      - name: broken for GLM worker test
+      - name: green
         run: |
-          echo "P18: worker should fix this step"
-          exit 1
+          echo "P18: green reset before red test"

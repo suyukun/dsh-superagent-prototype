@@ -6,7 +6,7 @@ jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
-      - name: deliberate failure for P18 test
+      - name: deliberate failure round 2
         run: |
-          echo "P18: this step fails on purpose to test the CI-failure trigger path"
+          echo "P18 round 2: broken on purpose, agent should restore green"
           exit 1

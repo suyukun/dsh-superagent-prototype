@@ -1,0 +1,12 @@
+name: P18 smoke
+on:
+  push:
+    branches: [main]
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deliberate failure for P18 test
+        run: |
+          echo "P18: this step fails on purpose to test the CI-failure trigger path"
+          exit 1

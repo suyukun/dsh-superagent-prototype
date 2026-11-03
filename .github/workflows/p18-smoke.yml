@@ -1,4 +1,5 @@
 name: P18 smoke
+# eval round-001 scenario A2: content change, CI stays green
 on:
   push:
     branches: [main]
@@ -6,6 +7,5 @@ jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
-      - name: green
-        run: |
-          echo "P18: smoke green, eval-round-001 scenario-A1 restored"
+      - name: eval-round-001 scenario-A2 green
+        run: echo "EVAL R1-A2: green change, no trigger expected"

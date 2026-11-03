@@ -6,7 +6,6 @@ jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
-      - name: deliberate failure round 3
+      - name: green
         run: |
-          echo "P18 round 3: broken on purpose, auto mode should accept and fix"
-          exit 1
+          echo "P18: green reset before red test"

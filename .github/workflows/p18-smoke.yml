@@ -6,7 +6,5 @@ jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
-      - name: deliberate failure round 2
-        run: |
-          echo "P18 round 2: broken on purpose, agent should restore green"
-          exit 1
+      - name: green
+        run: echo "P18: green reset before red test"
